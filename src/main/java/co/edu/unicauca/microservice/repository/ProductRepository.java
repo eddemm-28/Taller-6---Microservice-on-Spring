@@ -3,6 +3,7 @@ package co.edu.unicauca.microservice.repository;
 import co.edu.unicauca.microservice.model.Product;
 import org.springframework.stereotype.Repository;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.concurrent.CopyOnWriteArrayList;
@@ -25,7 +26,7 @@ public class ProductRepository {
     }
 
     public List<Product> findAll() {
-        return products;
+        return new ArrayList<>(products);
     }
 
     public Optional<Product> findById(Long id) {

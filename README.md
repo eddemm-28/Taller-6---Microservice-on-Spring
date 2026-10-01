@@ -6,8 +6,8 @@ productos (CRUD) usando los verbos HTTP **GET, POST, PUT y DELETE**.
 **Universidad del Cauca – Laboratorio de Ingeniería de Software II – 2026.2**
 
 Integrantes:
-- Nombre 1 – código
-- Nombre 2 – código
+- Eddy Sanchez <eddysanchez@unicauca.edu.co>
+- Santiago Lopez <johanl@unicauca.edu.co>
 
 ## Tecnologías
 - Java 17 o 21
@@ -60,3 +60,4 @@ El servicio queda disponible en `http://localhost:8080/api/products`.
 
 > Los datos se guardan en memoria: al reiniciar la aplicación vuelven
 > los dos productos iniciales (Laptop Dell y Mouse Inalámbrico).
+  

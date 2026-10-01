@@ -40,9 +40,10 @@ public class ProductController {
     // HTTP POST: Crear recurso -> 201 Created
     @PostMapping
     public ResponseEntity<Product> createProduct(@RequestBody Product product) {
+        product.setId(null);
         Product saved = productService.save(product);
         return ResponseEntity.status(HttpStatus.CREATED).body(saved);
-    }
+    }   
 
     // HTTP PUT: Actualizar recurso -> 200 OK o 404 Not Found
     @PutMapping("/{id}")
@@ -62,4 +63,6 @@ public class ProductController {
         }
         return ResponseEntity.noContent().build();
     }
+
+    
 }
